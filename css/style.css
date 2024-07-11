@@ -1,0 +1,166 @@
+:root {
+  /* PRIMARY */
+
+ --Bright-orange-color: hsl(31, 77%, 52%);
+ --Dark-cyan-color: hsl(184, 100%, 22%);
+ --Very-dark-cyan-color: hsl(179, 100%, 13%);
+
+ /* NEUTRAL */
+
+--Transparent-white-paragraphs-color: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons-color: hsl(0, 0%, 95%);
+
+/* FONT FAMILY */
+
+--Font-Lexend-Deca: "Lexend Deca", sans-serif;
+--Font-Big-Shoulders-Display: "Big Shoulders Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--Font-Lexend-Deca);
+  font-size: 15px;
+  background: var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Transparent-white-paragraphs-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Transparent-white-paragraphs-color);
+}
+
+.card-form {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 8rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-orange {
+  background: var(--Bright-orange-color);
+  padding: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-orange .card-content h1 {
+  font-family: var(--Font-Big-Shoulders-Display);
+  font-size: 2.6rem;
+  color: var(--Very-light-gray-background-headings-buttons-color);
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.card-orange .card-content p {
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+
+.card-orange .card-btn {
+  margin-top: 6rem;
+}
+
+.card-orange .card-btn a {
+  background: var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Bright-orange-color);
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.card-orange .card-btn a:hover {
+  background: none;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Very-light-gray-background-headings-buttons-color);
+}
+
+/* card cyan */
+
+.card-cyan {
+  background: var(--Dark-cyan-color);
+  padding: 50px;
+}
+
+.card-cyan .card-content h1 {
+  font-family: var(--Font-Big-Shoulders-Display);
+  font-size: 2.6rem;
+  color: var(--Very-light-gray-background-headings-buttons-color);
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.card-cyan .card-content p {
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+
+.card-cyan .card-btn {
+  margin-top: 6rem;
+}
+
+.card-cyan .card-btn a {
+  background: var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Dark-cyan-color);
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.card-cyan .card-btn a:hover {
+  background: none;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Very-light-gray-background-headings-buttons-color);
+}
+
+/* card dark cyan */
+
+.card-dark-cyan {
+  background: var(--Very-dark-cyan-color);
+  padding: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-dark-cyan .card-content h1 {
+  font-family: var(--Font-Big-Shoulders-Display);
+  font-size: 2.6rem;
+  color: var(--Very-light-gray-background-headings-buttons-color);
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.card-dark-cyan .card-content p {
+  line-height: 1.8;
+  margin-top: 2rem;
+}
+
+.card-dark-cyan .card-btn {
+  margin-top: 6rem;
+}
+
+.card-dark-cyan .card-btn a {
+  background: var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Very-dark-cyan-color);
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.card-dark-cyan .card-btn a:hover {
+  background: none;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons-color);
+  color: var(--Very-light-gray-background-headings-buttons-color);
+}
